@@ -7,17 +7,26 @@ import 'package:intl/intl.dart';
 class AgendaPublicaController extends ChangeNotifier {
   final String slug;
 
-  final FirebaseFirestore _fs = FirebaseFirestore.instance;
+  final FirebaseFirestore _fs;
 
-  final FirebaseFunctions _functions = FirebaseFunctions.instanceFor(
-    region: 'southamerica-east1',
-  );
+  final FirebaseFunctions? _functions;
 
-  AgendaPublicaController({required this.slug});
+  AgendaPublicaController({
+    required this.slug,
+    FirebaseFirestore? firestore,
+    FirebaseFunctions? functions,
+  })  : _fs = firestore ?? FirebaseFirestore.instance,
+        _functions = functions;
+
+  FirebaseFunctions get _func =>
+      _functions ??
+      FirebaseFunctions.instanceFor(region: 'southamerica-east1');
+
 
   /* ==========================================================
      CONFIGURAÇÃO DA PÁGINA
      ========================================================== */
+
 
   bool carregandoPagina = true;
   String? erroPagina;
@@ -723,7 +732,7 @@ class AgendaPublicaController extends ChangeNotifier {
         return;
       }
 
-      final callable = _functions.httpsCallable(
+      final callable = _func.httpsCallable(
         'consultarDisponibilidadeAgenda',
       );
 
@@ -834,7 +843,7 @@ class AgendaPublicaController extends ChangeNotifier {
 
       final dataTexto = DateFormat('yyyy-MM-dd').format(data);
 
-      final callable = _functions.httpsCallable(
+      final callable = _func.httpsCallable(
         'consultarDisponibilidadeAgenda',
       );
 
@@ -1106,9 +1115,10 @@ class AgendaPublicaController extends ChangeNotifier {
     notifyListeners();
 
     try {
-      final callable = _functions.httpsCallable('confirmarAgendamentoPublico');
+      final callable = _func.httpsCallable('confirmarAgendamentoPublico');
 
       final dataTexto = DateFormat('yyyy-MM-dd').format(data);
+
 
       /*
      * O telefone é enviado como foi digitado.
