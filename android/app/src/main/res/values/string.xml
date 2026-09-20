@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CRUD Negócios</string> 
+    <string name="facebook_app_id">869142482270248</string>
+    <string name="facebook_client_token">4005ea786ed69a6b6fff6ba4717e3779</string>   
+</resources>

@@ -1,0 +1,32 @@
+Rodar projeto simula
+flutter run -t lib/main_simula.dart
+
+rodar projeto prod
+flutter run -t lib/main_producao.dart
+
+compilar projeto Prod:
+flutter build appbundle -t lib/main_producao.dart --release
+
+rodar no celular prod:
+flutter run --release -t lib/main_producao.dart
+
+rodar no celular simula
+flutter run --release -t lib/main_simula.dart
+
+
+Rodar no navegador para testes web
+flutter run -d chrome -t lib/main_producao.dart
+
+deploy da versao web:
+flutter build web -t lib/main_producao.dart
+firebase deploy --only hosting
+
+Ver os logs das funcoes:
+firebase functions:log --only validateGoogleSubscription
+
+
+
+
+
+
+

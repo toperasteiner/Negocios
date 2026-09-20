@@ -1,0 +1,39 @@
+{
+  "id": "premium",
+  "name": "Plano Premium",
+  "description": "Plano completo com uso ilimitado para empresas que precisam de escala.",
+
+  "active": true,
+  "sortOrder": 3,
+
+  "prices": {
+    "monthly": 36.99,
+    "semiannual": 199.99,
+    "annual": 359.99
+  },
+
+  "limits": {
+    "maxClients": -1,
+    "maxSuppliers": -1,
+    "maxProducts": -1,
+    "maxServices": -1,
+    "maxGoals": -1,
+    "maxOrdersPerMonth": -1
+  },
+
+  "features": {
+    "dashboardAccountsPayable": true,
+    "dashboardAccountsReceivable": true,
+    "dashboardFinance": true,
+    "dashboardOrdersByPeriod": true,
+    "dashboardTopProducts": true,
+    "dashboardTopServices": true,
+    "appointments": true,
+    "stock": true,
+    "accountsPayable": true,
+    "accountsReceivable": true
+  },
+
+  "createdAt": null,
+  "updatedAt": null
+}

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "897660277564",
+    "project_id": "projeto-pedidos-472813",
+    "storage_bucket": "projeto-pedidos-472813.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897660277564:android:8062c1d6fc739ab1fdc439",
+        "android_client_info": {
+          "package_name": "br.com.danielsousa.pedidos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897660277564-3erm2f5pfroefbgmg982q5tvuvi5df2b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.danielsousa.pedidos",
+            "certificate_hash": "37fbfed0ca53527b795ae625f74f57353ed2b411"
+          }
+        },
+        {
+          "client_id": "897660277564-9iu4jkrkcoomltvcis33aiapcjq97906.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.danielsousa.pedidos",
+            "certificate_hash": "7c2964743783e9b212b6aadf5d7664a899e8d2cf"
+          }
+        },
+        {
+          "client_id": "897660277564-mspabpc62kbkul9cuqjj710hntsdre0f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.danielsousa.pedidos",
+            "certificate_hash": "12cac4edaea29d8712e3f28e1ed9fc06e09e02ca"
+          }
+        },
+        {
+          "client_id": "897660277564-24klb778fdfqejsucha0ma70tj7hi6vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBakh2LAmvLjYOBFmuEQ-waJnJGAQHb_wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897660277564-24klb778fdfqejsucha0ma70tj7hi6vc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1099186542997",
+    "project_id": "projeto-pedidos-simula",
+    "storage_bucket": "projeto-pedidos-simula.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099186542997:android:59167a82f63dd5b3b4be9c",
+        "android_client_info": {
+          "package_name": "br.com.danielsousa.pedidos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwxFYk1cG0H-Yb_4VtuPIF0mrBkGNqADU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099186542997:android:444e0dafdec335ccb4be9c",
+        "android_client_info": {
+          "package_name": "com.danielsousa.pedidosSimula"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwxFYk1cG0H-Yb_4VtuPIF0mrBkGNqADU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

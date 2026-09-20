@@ -1,0 +1,75 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "projeto-pedidos-472813",
+          "appId": "1:897660277564:android:8062c1d6fc739ab1fdc439",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "projeto-pedidos-472813",
+          "configurations": {
+            "android": "1:897660277564:android:8062c1d6fc739ab1fdc439",
+            "web": "1:897660277564:web:7a960aad44591d07fdc439",
+            "windows": "1:897660277564:web:5872d13014dccbe5fdc439"
+          }
+        },
+        "lib/firebase_options_simula.dart": {
+          "projectId": "projeto-pedidos-simula",
+          "configurations": {
+            "android": "1:1099186542997:android:59167a82f63dd5b3b4be9c",
+            "ios": "1:1099186542997:ios:27722eb5142df5f0b4be9c",
+            "macos": "1:1099186542997:ios:27722eb5142df5f0b4be9c",
+            "web": "1:1099186542997:web:961c8ecf0ac55f75b4be9c",
+            "windows": "1:1099186542997:web:ac06b87a8cec7410b4be9c"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint",
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    },
+    {
+      "source": "cloud_functions",
+      "codebase": "functions",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ],
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

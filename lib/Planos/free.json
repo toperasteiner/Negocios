@@ -1,0 +1,39 @@
+{
+  "id": "free",
+  "name": "Plano Free",
+  "description": "Plano gratuito com limites básicos para pequenos negócios.",
+
+  "active": true,
+  "sortOrder": 1,
+
+  "prices": {
+    "monthly": 0,
+    "semiannual": 0,
+    "annual": 0
+  },
+
+  "limits": {
+    "maxClients": 10,
+    "maxSuppliers": 10,
+    "maxProducts": 1,
+    "maxServices": 3,
+    "maxGoals": 1,
+    "maxOrdersPerMonth": 10
+  },
+
+  "features": {
+    "dashboardAccountsPayable": true,
+    "dashboardAccountsReceivable": true,
+    "dashboardFinance": true,
+    "dashboardOrdersByPeriod": true,
+    "dashboardTopProducts": true,
+    "dashboardTopServices": true,
+    "appointments": true,
+    "stock": true,
+    "accountsPayable": true,
+    "accountsReceivable": true
+  },
+
+  "createdAt": null,
+  "updatedAt": null
+}

@@ -1,0 +1,39 @@
+{
+  "id": "starter",
+  "name": "Plano Starter",
+  "description": "Plano para operação em crescimento com limites maiores e mais capacidade de uso.",
+
+  "active": true,
+  "sortOrder": 2,
+
+  "prices": {
+    "monthly": 31.5,
+    "semiannual": 169.99,
+    "annual": 305.99
+  },
+
+  "limits": {
+    "maxClients": 30,
+    "maxSuppliers": 30,
+    "maxProducts": 50,
+    "maxServices": 10,
+    "maxGoals": 5,
+    "maxOrdersPerMonth": 50
+  },
+
+  "features": {
+    "dashboardAccountsPayable": true,
+    "dashboardAccountsReceivable": true,
+    "dashboardFinance": true,
+    "dashboardOrdersByPeriod": true,
+    "dashboardTopProducts": true,
+    "dashboardTopServices": true,
+    "appointments": true,
+    "stock": true,
+    "accountsPayable": true,
+    "accountsReceivable": true
+  },
+
+  "createdAt": null,
+  "updatedAt": null
+}
